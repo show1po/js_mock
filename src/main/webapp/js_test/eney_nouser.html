@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>台灣之光6 - 伊莉影片區</title>
+    <meta name="keywords" content="台灣之光6"/>
+    <meta name="description" content="台灣之光6"/>
+    <meta name="generator" content="EYNY "/>
+    <meta name="author" content="EYNY Team and EYNY UI Team"/>
+    <meta name="copyright" content="2000-2100 EYNY Inc."/>
+    <meta name="MSSmartTagsPreventParsing" content="True"/>
+    <meta http-equiv="MSThemeCompatible" content="Yes"/>
+    <base href="http://www.eyny.com/"/>
+    <link rel="shortcut icon" href="favicon.ico?SwQ" type="image/x-icon"/>
+    <meta name="application-name" content="伊莉影片區"/>
+    <meta name="msapplication-tooltip" content="伊莉影片區"/>
+    <script src="data/cache/common.js?SwQ" type="text/javascript"></script>
+    <script src="data/cache/forum_viewthread.js?SwQ" type="text/javascript"></script><!--// Post Like //-->
+    <script src="data/cache/js_video.js?SwQ" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="data/cache/css_video.css?SwQ"/>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            background-color: #F1F1F1;
+            font-size: 13px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:link, a:visited, a:hover, a:active {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            border-spacing: 0px;
+        }
+
+        td {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        p {
+            margin: 0px 0px 10px 0px;
+        }
+
+        .savatar img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+        }
+
+        /* Page */
+        .pgs #newspecial, .pgs #newspecialtmp, .pgs #post_reply, .pgs #post_replytmp {
+            float: left;
+            margin-right: 5px;
+        }
+
+        .pg {
+            float: right;
+        }
+
+        .pg, .pgb {
+            line-height: 26px;
+        }
+
+        .pg a, .pg strong, .pgb a {
+            float: left;
+            display: inline;
+            margin-left: 4px;
+            padding: 0 8px;
+            height: 26px;
+            border: 1px solid;
+            border-color: #CCC;
+            background-color: #F8F8F8;
+            background-repeat: no-repeat;
+            color: #333;
+            overflow: hidden;
+            text-decoration: none;
+        }
+
+        .pg a.nxt, .pgb a {
+            padding: 0 10px;
+        }
+
+        .pg a:hover, .pgb a:hover {
+            border-color: #CCC;
+            color: #333;
+        }
+
+        .pg a.nxt {
+            padding-right: 25px;
+            background-image: url(static/image/common/arw_r.gif);
+            background-position: 90% 50%;
+        }
+
+        .pg a.prev {
+            background-image: url(static/image/common/arw_l.gif);
+            background-position: 50% 50%;
+        }
+
+        .pg strong {
+            background-color: #DDD;
+            color: #333;
+        }
+
+        .pgb a {
+            padding-left: 25px;
+            background-image: url(static/image/common/arw_l.gif);
+            background-position: 10px 50%;
+        }
+
+        #pgt .pg, #pgt .pgb {
+            margin-top: 5px;
+        }
+
+        input[type='submit'], button, .button {
+            padding: 6px;
+            border: 1px solid #999;
+            background-color: #EEE;
+        }
+
+        .fixwidth {
+            width: 1200px;
+            margin: 0px auto;
+            padding: 0px;
+            margin-top: 10px;
+        }
+
+        .block {
+            border: 1px solid #E6E6E6;
+            box-shadow: 1px 1px 1px #EFEFEF;
+            background-color: #FFF;
+            margin-bottom: 10px;
+        }
+
+        .block td {
+            margin: 0px;
+            padding: 10px;
+        }
+
+        .pipe {
+            margin: 10px;
+        }
+
+        .p_opt {
+            padding: 5px;
+            border: 1px solid #CCC;
+            background-color: #FFF;
+        }
+
+        /* ajaxmenu */
+    </style>
+</head>
+<body><!--// ajax menu //-->
+<div id="append_parent"></div>
+<div id="ajaxwaitid"></div>
+<table><!--// Header //-->
+    <tr>
+        <td style='position:fixed; width:100%; height:50px; border:1px solid #DDD; background-color: #FFF; z-index: 999;'
+            nowrap="nowrap">
+            <table width='100%' style='height:50px;vertical-align:middle;'>
+                <tr>
+                    <td align='left' style='padding-left:80px; width:150px; min-width:150px;'><a href="/video.php"
+                                                                                                 title="伊莉影片區"
+                                                                                                 style='text-decoration: none;'><font
+                            style='font-size: 40px; font-weight:bold; color: #F50; font-family: Impact,Verdana,Arial'>EYNY</font></a>
+                    </td>
+                    <td align='left' style='width:680px; min-width:680px;'>
+                        <form id='search' action="/video.php" method="GET"><input type='hidden' name='mod'
+                                                                                  value='search'><input type='hidden'
+                                                                                                        name='type'
+                                                                                                        value=""><input
+                                type='hidden' name='date' value=''><input type='hidden' name='orderby' value=''><select
+                                name='cid' style='margin:10px; font-size:16px; padding:4px;'
+                                onchange="javascript:window.location='/video.php?mod=channel&cid='+this.value;">
+                            <option value='0' style='font-weight:bold;'>全部頻道</option>
+                            <option value='3' style='font-weight:bold;'>搞笑</option>
+                            </optgroup>
+                            <option value='69' style='font-weight:bold;'>動漫</option>
+                            </optgroup>
+                            <option value='55' style='font-weight:bold;'>電影</option>
+                            </optgroup>
+                            <option value='1' style='font-weight:bold;'>音樂</option>
+                            </optgroup>
+                            <option value='5' style='font-weight:bold;'>影視</option>
+                            </optgroup>
+                            <option value='10' style='font-weight:bold;'>娛樂</option>
+                            </optgroup>
+                            <option value='13' style='font-weight:bold;'>生活</option>
+                            </optgroup>
+                            <option value='18' style='font-weight:bold;'>時事新聞</option>
+                            </optgroup>
+                            <option value='16' style='font-weight:bold;'>體育</option>
+                            </optgroup>
+                            <option value='4' style='font-weight:bold;'>動物</option>
+                            </optgroup>
+                            <option value='6' style='font-weight:bold;'>遊戲</option>
+                            </optgroup>
+                            <option value='19' style='font-weight:bold;'>飲食</option>
+                            </optgroup>
+                            <option value='22' style='font-weight:bold;'>靈異</option>
+                            </optgroup>
+                            <option value='21' style='font-weight:bold;'>H 動漫</option>
+                            </optgroup>
+                            <option value='20' style='font-weight:bold;'>成人</option>
+                            </optgroup>
+                            <option value='17' style='font-weight:bold;'>其他</option>
+                            </optgroup></select><input type='text' name='srchtxt' value="" autocomplete='off'
+                                                       style='padding:2px; width:460px; height:25px; border:1px solid #BBB; box-shadow:1px 1px 2px #CCC inset; font-size: 15px;'><a
+                                href="javascript: document.getElementById('search').submit();" class='button'>搜尋</a>
+                            <a href='/video.php?mod=upload' class='button'>上傳</a>
+                        </form>
+                    </td>
+                    <td align='right' style='font-size:15px'>
+                        <div style='display:none'>
+                            <script src="data/cache/logging.js?SwQ" type="text/javascript"></script>
+                            <form method="post" autocomplete="off" id="lsform"
+                                      action="member.php?mod=logging&amp;action=login&amp;loginsubmit=yes&amp;infloat=yes&amp;lssubmit=yes"
+                                  onsubmit="return lsSubmit()">
+                                <div class="fastlg cl"><span id="return_ls" style="display:none"></span>
+                                    <div class="y pns">
+                                        <table cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td><span class="ftid"><select name="fastloginfield"
+                                                                               id="ls_fastloginfield" width="40"
+                                                                               tabindex="900"><option value="username">用戶名</option><option
+                                                        value="uid">UID</option><option
+                                                        value="email">Email</option></select></span>
+                                                    <script type="text/javascript">simulateSelect('ls_fastloginfield')</script>
+                                                </td>
+                                                <td><input type="text" name="username" id="ls_username"
+                                                           autocomplete="off" class="px vm" tabindex="901" value=''/>
+                                                </td>
+                                                <td class="fastlg_l"><label for="ls_cookietime"><input type="checkbox"
+                                                                                                       name="cookietime"
+                                                                                                       id="ls_cookietime"
+                                                                                                       class="pc"
+                                                                                                       value="2592000"
+                                                                                                       tabindex="903"/>自動登錄</label>
+                                                </td>
+                                                <td>&nbsp;<a href="javascript:;"
+                                                             onclick="showWindow('login', 'member.php?mod=logging&action=login&viewlostpw=1')">找回密碼</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label for="ls_password" class="z psw_w">密碼</label></td>
+                                                <td><input type="password" name="password" id="ls_password"
+                                                           class="px vm" autocomplete="off" tabindex="902"/></td>
+                                                <td class="fastlg_l">
+                                                    <button type="submit" class="pn vm" tabindex="904"
+                                                            style="width: 75px;"><em>登錄</em></button>
+                                                </td>
+                                                <td>&nbsp;<a href="member.php?mod=register" class="xi2 xw1">註冊</a></td>
+                                            </tr>
+                                        </table>
+                                        <input type="hidden" name="quickforward" value="yes"/><input type="hidden"
+                                                                                                     name="handlekey"
+                                                                                                     value="ls"/></div>
+                                </div>
+                            </form>
+                        </div>
+                        <a href='member.php?mod=register'>註冊</a><span class="pipe">|</span><a
+                            href='member.php?mod=logging&action=login&referer=/video.php?mod=video&vid=1528350&size=360'>登錄</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td style='height:50px;'></td>
+    </tr>
+    <tr>
+        <td style='height:90%; background-color:#F1F1F1;vertical-align:top;'>
+            <table style='height:40px;'>
+                <tr>
+                    <td style='border:1px solid #DDD; background-color:#EEE; text-align:center; font-weight: bold;'>請先
+                        <a href='member.php?mod=register' style='color:blue;'>註冊</a> 或 <a
+                                href='member.php?mod=logging&action=login&referer=/video.php?mod=video&vid=1528350&size=360'
+                                style='color:blue;'>登錄</a> 會員，才能觀看這部影片或高清影片。
+                    </td>
+                </tr>
+            </table><!--// Player //-->
+            <div style='background-color: #000; width:100%; text-align:center;' id='video_container'>
+                <!--// Jw Player Ver 5 17/5/2017 17:14 //-->
+                <center>
+                    <div id='mediaplayer'></div>
+                </center>
+                <script type='text/javascript' src='lib/static/jw/player.js'></script>
+                <script type='text/javascript'>
+                    jwplayer('mediaplayer').setup({
+                        flashplayer: 'lib/static/jw/player.swf',
+                        autostart: 'false',
+                        repeat: 'none',
+                        controlbar: 'bottom',
+                        backcolor: '000000',
+                        frontcolor: 'AAAAAA',
+                        lightcolor: '888888',
+                        bufferlength: 1,
+                        width: 960,
+                        height: 505,
+                        image: 'http://a434.static-file.com:8080/video/558278b2e8b423577fab770384402af8/5922e9b6/mp4/v2/150620/76064d29cf1a937ddf5c501de31db757.jpg',
+                        file: 'http://a434.static-file.com:8080/video/558278b2e8b423577fab770384402af8/5922e9b6/mp4/v2/150620/76064d29cf1a937ddf5c501de31db757.jpg'
+                    });
+                </script>
+            </div>
+            <div class='fixwidth'>
+                <table style='border-spacing: 10px;'>
+                    <tr>
+                        <td style='width:740px; vertical-align:top;'>
+                            <table class='block' style='height:auto'>
+                                <tr>
+                                    <td colspan=3><p><font
+                                            style='font-size:25px; font-family:sans-serif, arial; color: #000;'>台灣之光6<a
+                                            href='/video.php?mod=video&vid=1528350&size=240'><font
+                                            style='margin-left:3px; border:1px solid #333; background-color:#333; padding:2px;color:white;  font-size:13px;'>240</font></a><a
+                                            href='/video.php?mod=video&vid=1528350&size=360'><font
+                                            style='margin-left:3px; border:1px solid #333; background-color:#333; padding:2px;color:white;  font-size:13px;'>360</font></a><a
+                                            href='/video.php?mod=video&vid=1528350&mode=html5'><font
+                                            style='margin-left:3px; border:1px solid #999; background-color:#FFF;color:#666; padding:2px; font-size:13px;'
+                                            title='HTML5 播放器，建議用 Chrome, Firefox'>html5</font></a><a
+                                            href='/video.php?mod=video&vid=1528350&mode=flash'><font
+                                            style='margin-left:3px; border:1px solid #999; background-color:#AAA; color:#FFF;font-weight:bold; padding:2px; font-size:13px;'
+                                            title='FLASH 播放器'>flash</font></a></font></p></td>
+                                </tr>
+                                <tr>
+                                    <td width='60'><img
+                                            src="http://a433.file-static.com/data/avatar/006/23/68/42_avatar_small.jpg"
+                                            onerror="this.onerror=null;this.src='http://uc.eyny.com/images/noavatar_small.gif'"/>
+                                    </td>
+                                    <td width='250' style='text-align:left;'><p><a
+                                            href="/video.php?mod=user&uid=6236842">hunter0387</a> <a
+                                            href="/video.php?mod=misc&action=favorite&uid=6236842"
+                                            onclick="ajaxmenu(this, 3000, 1, 0, '43');return false;"
+                                            style='border:1px solid #F00; background-color:#F55; padding:3px; color:white;'
+                                            title='訂閱後在訂閱內容看到這用戶的內容'>訂閱</a></p>
+                                        <p>2017-01-27</p>
+                                        <p><a href="/video.php?mod=channel&cid=33">成人其他</a></p></td>
+                                    <td style='text-align:right;vertical-align:bottom;'>
+                                        <div style="float:left;"><a id="k_favorite"
+                                                                    href="/video.php?mod=misc&action=favorite&vid=1528350"
+                                                                    onclick="ajaxmenu(this, 3000, 1, 0, '43');return false;">
+                                            <button><img src="static/image/common/fav.gif" alt="收藏"/>收藏</button>
+                                        </a>
+                                        </div>
+                                        <div style='position:relative;float:left;'>
+                                            <div id='user_playlist_box'
+                                                 style='position:absolute;border:1px solid #CCC;padding:5px; display:none;background-color:#FFF;text-align:center;'>
+                                                <SELECT id='user_playlist' style='float:left;'></SELECT><a href="#"
+                                                                                                           onclick="e=document.getElementById('user_playlist');this.href=e.options[e.selectedIndex].value;ajaxmenu(this, 3000, 1, 0, '43');setTimeout(function() {document.getElementById('user_playlist_box').style.display='none';}, 1000);return false;">
+                                                <button>加入</button>
+                                            </a>
+                                                <a href="#"
+                                                   onclick="document.getElementById('user_playlist_box').style.display='none';return false;">
+                                                    <button>取消</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div style="float:left;">&nbsp;
+                                            <a id="k_favorite" href="#"
+                                               onclick="document.getElementById('user_playlist_box').style.display='';return false;">
+                                                <button><img src="static/image/common/fav.gif" alt="加入專輯"/>加入專輯</button>
+                                            </a>
+                                            <a id="recommend_add"
+                                               href="/video.php?mod=misc&action=recommend&vid=1528350"
+                                               onclick="ajaxmenu(this, 3000, 1, 0, '43', 'recommendupdate(1)');return false;"
+                                               onmouseover="this.title = $('recommendv_add').innerHTML">
+                                                <button><img src="static/image/common/rec_add.gif" alt="頂"/>頂 <span
+                                                        id="recommendv_add">3</span></button>
+                                            </a>
+                                            <h1 style='display:inline'>696</h1></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan=3></td>
+                                </tr>
+                            </table>
+                            <table class='block' style='height:auto;'>
+                                <tr>
+                                    <td>
+                                        <form action='/video.php?mod=video&vid=1528350&size=360' method='POST'><textarea
+                                                name='comment' rows='3'
+                                                style='width:99%; border:1px solid #DDD;'></textarea>
+                                            <p><input type='submit' name='commentsubmit' value='發表評論'
+                                                      onclick="vdo_post_comment(1528350); return false;">
+                                            <div id="filestatus_1528350"></div>
+                                            <div id="fileoperate_1528350"></div>
+                                            <div id="filesave_1528350"></div>
+                                            </p></form>
+                                        <div id="filecontent_1528350">
+                                            <script>
+                                                vdo_get_comment(1528350, null, 1);
+                                                var get_comment_timer = setInterval(function () {
+                                                    vdo_get_comment(1528350, null, 1);
+                                                }, 1000 * 300);
+                                                setTimeout(function () {
+                                                    clearInterval(get_comment_timer);
+                                                }, 1000 * 3600 * 2);
+                                            </script>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style='vertical-align:top;'><!--// 專輯影片 //--><!--// 相關影片 //-->
+                            <table class='block' style='height:auto'>
+                                <tr>
+                                    <td colspan=2 style='text-align:center;'>相關影片</td>
+                                </tr>
+                                <tr>
+                                    <td width='140'>
+                                        <div style='height:80px; overflow:hidden;'><a
+                                                href="/video.php?mod=video&vid=1722056" target='_blank'><img
+                                                src='http://a226.static-file.com:8080/shared/upload/coverpic/201705/20170522210523_2417.jpg'
+                                                width=140 title='665.t'
+                                                onerror="this.src='lib/static/image/common/black.png'"></a></div>
+                                    </td>
+                                    <td style='vertical-align:top;'><p style='font-size:13px;'><a
+                                            href="/video.php?mod=video&vid=1722056" title='665.t'
+                                            target='_blank'>665.t</a></p>
+                                        <p style='margin-top:5px;'><font
+                                                style='padding:2px; ; font-size:10px; color:#999;'><font
+                                                style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6;'>360</font>
+                                            <font style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6;'>02:35</font></font><font
+                                                style='padding:2px; ; font-size:11px; color:#999;'>( 1 次 )</font></p>
+                                        <p><a href="/video.php?mod=user&uid=17149612"><font
+                                                style='font-size:11px; color:#999;'>畸路人1</font></a></p></td>
+                                </tr>
+                                <tr>
+                                    <td width='140'>
+                                        <div style='height:80px; overflow:hidden;'><a
+                                                href="/video.php?mod=video&vid=1721949" target='_blank'><img
+                                                src='http://a403.static-file.com:8080/shared/upload/coverpic/201705/20170522203729_7792.jpg'
+                                                width=140 title='NO0075'
+                                                onerror="this.src='lib/static/image/common/black.png'"></a></div>
+                                    </td>
+                                    <td style='vertical-align:top;'><p style='font-size:13px;'><a
+                                            href="/video.php?mod=video&vid=1721949" title='NO0075' target='_blank'>NO0075</a>
+                                    </p>
+                                        <p style='margin-top:5px;'><font
+                                                style='padding:2px; ; font-size:10px; color:#999;'><font
+                                                style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6;'>480</font>
+                                            <font style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6;'>01:00</font></font><font
+                                                style='padding:2px; ; font-size:11px; color:#999;'>( 8 次 )</font></p>
+                                        <p><a href="/video.php?mod=user&uid=17122771"><font
+                                                style='font-size:11px; color:#999;'>加奈菜菜子</font></a></p></td>
+                                </tr>
+                                <tr>
+                                    <td width='140'>
+                                        <div style='height:80px; overflow:hidden;'><a
+                                                href="/video.php?mod=video&vid=1721944" target='_blank'><img
+                                                src='http://a328.static-file.com:8080/shared/upload/coverpic/201705/20170522203749_9054.jpg'
+                                                width=140 title='NO0066'
+                                                onerror="this.src='lib/static/image/common/black.png'"></a></div>
+                                    </td>
+                                    <td style='vertical-align:top;'><p style='font-size:13px;'><a
+                                            href="/video.php?mod=video&vid=1721944" title='NO0066' target='_blank'>NO0066</a>
+                                    </p>
+                                        <p style='margin-top:5px;'><font
+                                                style='padding:2px; ; font-size:10px; color:#999;'><font
+                                                style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6;'>480</font>
+                                            <font style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6;'>09:52</font></font><font
+                                                style='padding:2px; ; font-size:11px; color:#999;'>( 11 次 )</font></p>
+                                        <p><a href="/video.php?mod=user&uid=17122771"><font
+                                                style='font-size:11px; color:#999;'>加奈菜菜子</font></a></p></td>
+                                </tr>
+                                <tr>
+                                    <td width='140'>
+                                        <div style='height:80px; overflow:hidden;'><a
+                                                href="/video.php?mod=video&vid=1721942" target='_blank'><img
+                                                src='http://a214.static-file.com:8080/shared/upload/coverpic/201705/20170522203743_4545.jpg'
+                                                width=140 title='NO0057'
+                                                onerror="this.src='lib/static/image/common/black.png'"></a></div>
+                                    </td>
+                                    <td style='vertical-align:top;'><p style='font-size:13px;'><a
+                                            href="/video.php?mod=video&vid=1721942" title='NO0057' target='_blank'>NO0057</a>
+                                    </p>
+                                        <p style='margin-top:5px;'><font
+                                                style='padding:2px; ; font-size:10px; color:#999;'><font
+                                                style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6;'>720</font>
+                                            <font style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6;'>00:52</font></font><font
+                                                style='padding:2px; ; font-size:11px; color:#999;'>( 14 次 )</font></p>
+                                        <p><a href="/video.php?mod=user&uid=17122771"><font
+                                                style='font-size:11px; color:#999;'>加奈菜菜子</font></a></p></td>
+                                </tr>
+                                <tr>
+                                    <td width='140'>
+                                        <div style='height:80px; overflow:hidden;'><a
+                                                href="/video.php?mod=video&vid=1721939" target='_blank'><img
+                                                src='http://a218.static-file.com:8080/shared/upload/coverpic/201705/20170522203716_7487.jpg'
+                                                width=140 title='NO0019'
+                                                onerror="this.src='lib/static/image/common/black.png'"></a></div>
+                                    </td>
+                                    <td style='vertical-align:top;'><p style='font-size:13px;'><a
+                                            href="/video.php?mod=video&vid=1721939" title='NO0019' target='_blank'>NO0019</a>
+                                    </p>
+                                        <p style='margin-top:5px;'><font
+                                                style='padding:2px; ; font-size:10px; color:#999;'><font
+                                                style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6;'>480</font>
+                                            <font style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6;'>24:40</font></font><font
+                                                style='padding:2px; ; font-size:11px; color:#999;'>( 19 次 )</font></p>
+                                        <p><a href="/video.php?mod=user&uid=17122771"><font
+                                                style='font-size:11px; color:#999;'>加奈菜菜子</font></a></p></td>
+                                </tr>
+                            </table><!--// 用戶影片 //-->
+                            <table class='block' style='height:auto'>
+                                <tr>
+                                    <td colspan=2 style='text-align:center;'>用戶影片</td>
+                                </tr>
+                                <tr>
+                                    <td width='140'>
+                                        <div style='height:80px; overflow:hidden;'><a
+                                                href="/video.php?mod=video&vid=1596290" target='_blank'><img
+                                                src='http://a423.static-file.com:8080/shared/upload/coverpic/1703/20170312210945_4403.jpg'
+                                                width=140 title='在朋友旁公開愛愛 中字'
+                                                onerror="this.src='lib/static/image/common/black.png'"></a></div>
+                                    </td>
+                                    <td style='vertical-align:top;'><p style='font-size:13px;'><a
+                                            href="/video.php?mod=video&vid=1596290" title='在朋友旁公開愛愛 中字' target='_blank'>在朋友旁公開愛愛
+                                        中字</a></p>
+                                        <p style='margin-top:2px;'><font
+                                                style='padding:2px; ; font-size:10px; color:#999;'><font
+                                                style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6; '>360</font>
+                                            <font style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6;'>2:03:39</font></font><font
+                                                style='padding:2px; ; font-size:11px; color:#999;'>( 1677 次 )</font></p>
+                                        <p><a href="/video.php?mod=user&uid=6236842"><font
+                                                style='font-size:11px; color:#999;'>hunter0387</font></a></p></td>
+                                </tr>
+                                <tr>
+                                    <td width='140'>
+                                        <div style='height:80px; overflow:hidden;'><a
+                                                href="/video.php?mod=video&vid=1596117" target='_blank'><img
+                                                src='http://a415.static-file.com:8080/shared/upload/coverpic/1703/20170312185445_6261.jpg'
+                                                width=140 title='癡女 中字'
+                                                onerror="this.src='lib/static/image/common/black.png'"></a></div>
+                                    </td>
+                                    <td style='vertical-align:top;'><p style='font-size:13px;'><a
+                                            href="/video.php?mod=video&vid=1596117" title='癡女 中字' target='_blank'>癡女
+                                        中字</a></p>
+                                        <p style='margin-top:2px;'><font
+                                                style='padding:2px; ; font-size:10px; color:#999;'><font
+                                                style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6; '>480</font>
+                                            <font style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6;'>1:58:31</font></font><font
+                                                style='padding:2px; ; font-size:11px; color:#999;'>( 919 次 )</font></p>
+                                        <p><a href="/video.php?mod=user&uid=6236842"><font
+                                                style='font-size:11px; color:#999;'>hunter0387</font></a></p></td>
+                                </tr>
+                                <tr>
+                                    <td width='140'>
+                                        <div style='height:80px; overflow:hidden;'><a
+                                                href="/video.php?mod=video&vid=1595995" target='_blank'><img
+                                                src='http://a421.static-file.com:8080/shared/upload/coverpic/1703/20170312150303_3911.jpg'
+                                                width=140 title='愛上妹妹男友 中字'
+                                                onerror="this.src='lib/static/image/common/black.png'"></a></div>
+                                    </td>
+                                    <td style='vertical-align:top;'><p style='font-size:13px;'><a
+                                            href="/video.php?mod=video&vid=1595995" title='愛上妹妹男友 中字' target='_blank'>愛上妹妹男友
+                                        中字</a></p>
+                                        <p style='margin-top:2px;'><font
+                                                style='padding:2px; ; font-size:10px; color:#999;'><font
+                                                style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6; '>480</font>
+                                            <font style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6;'>2:10:21</font></font><font
+                                                style='padding:2px; ; font-size:11px; color:#999;'>( 1161 次 )</font></p>
+                                        <p><a href="/video.php?mod=user&uid=6236842"><font
+                                                style='font-size:11px; color:#999;'>hunter0387</font></a></p></td>
+                                </tr>
+                                <tr>
+                                    <td width='140'>
+                                        <div style='height:80px; overflow:hidden;'><a
+                                                href="/video.php?mod=video&vid=1595982" target='_blank'><img
+                                                src='http://a329.static-file.com:8080/shared/upload/coverpic/1703/20170312145936_4915.jpg'
+                                                width=140 title='冰與火之歌：權力的游戲第一季第10集'
+                                                onerror="this.src='lib/static/image/common/black.png'"></a></div>
+                                    </td>
+                                    <td style='vertical-align:top;'><p style='font-size:13px;'><a
+                                            href="/video.php?mod=video&vid=1595982" title='冰與火之歌：權力的游戲第一季第10集'
+                                            target='_blank'>冰與火之歌：權力的游戲第一季第10集 ...</a></p>
+                                        <p style='margin-top:2px;'><font
+                                                style='padding:2px; ; font-size:10px; color:#999;'><font
+                                                style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6; '>480</font>
+                                            <font style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6;'>52:35</font></font><font
+                                                style='padding:2px; ; font-size:11px; color:#999;'>( 595 次 )</font></p>
+                                        <p><a href="/video.php?mod=user&uid=6236842"><font
+                                                style='font-size:11px; color:#999;'>hunter0387</font></a></p></td>
+                                </tr>
+                                <tr>
+                                    <td width='140'>
+                                        <div style='height:80px; overflow:hidden;'><a
+                                                href="/video.php?mod=video&vid=1595981" target='_blank'><img
+                                                src='http://a416.static-file.com:8080/shared/upload/coverpic/1703/20170312145917_9272.jpg'
+                                                width=140 title='冰與火之歌：權力的游戲第一季第09集'
+                                                onerror="this.src='lib/static/image/common/black.png'"></a></div>
+                                    </td>
+                                    <td style='vertical-align:top;'><p style='font-size:13px;'><a
+                                            href="/video.php?mod=video&vid=1595981" title='冰與火之歌：權力的游戲第一季第09集'
+                                            target='_blank'>冰與火之歌：權力的游戲第一季第09集 ...</a></p>
+                                        <p style='margin-top:2px;'><font
+                                                style='padding:2px; ; font-size:10px; color:#999;'><font
+                                                style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6; '>480</font>
+                                            <font style='padding:2px; border:1px solid #CCC; background-color:#F6F6F6;'>56:14</font></font><font
+                                                style='padding:2px; ; font-size:11px; color:#999;'>( 590 次 )</font></p>
+                                        <p><a href="/video.php?mod=user&uid=6236842"><font
+                                                style='font-size:11px; color:#999;'>hunter0387</font></a></p></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr><!--// Content End //--><!--// Footer //-->
+    <tr>
+        <td>
+            <table class='block' style='margin-bottom:0px; height:50px;vertical-align:middle; text-align:center; '>
+                <tr>
+                    <td><p><a href="/video.php?mod=disclaimer">免責聲明</a><span class="pipe">|</span><a
+                            href="mailto:admin@eyny.com">聯絡我們</a><span class="pipe">|</span><a
+                            href="http://www.eyny.com/forum-1817-1.html" target="_blank">影片專區</a><span
+                            class="pipe">|</span><a href="http://www.eyny.com/thread-3094761-1-1.html" target="_blank">注意事項</a><span
+                            class="pipe">|</span><a href="/video.php?mod=misc&action=faq" target="_blank">常見問題</a><span
+                            class="pipe">|</span>
+                        <a href="http://www.eyny.com/store.php?website=video.eyny.com" target="_blank">尊貴會籍</a></p></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+</body>
+</html>
